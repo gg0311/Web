@@ -205,7 +205,7 @@ nav ul li:hover::after {
  .word{
      position: absolute;
      top: 55%;
-     left: 53%;
+     left: 80%;
      transform: translate(-50%,-50%);
      color: #dc4c4c;
      font-size: 60px;
@@ -215,7 +215,7 @@ nav ul li:hover::after {
  .word02{
      position: absolute;
      top: 62%;
-     left: 52%;
+     left: 80%;
      transform: translate(-50%,-50%);
      color: #e82323;
      font-size: 30px;

@@ -1,0 +1,401 @@
+.header {
+    width: 100%;
+    height: 140px;
+    border-bottom: 1px solid #e8e7e7;
+    background-color: rgb(253, 248, 248);
+}
+
+.wrap {
+    margin: 0 auto;
+    width: 1190px;
+}
+
+.header-box {
+    height: 140px;
+    background-color:  rgb(253, 248, 248);
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    z-index: 2;
+    width: 140px;
+    height: 120px;
+    left: 0;
+    top: 10px;
+    background: url(./logo.jpg) no-repeat; 
+    background-position: 0 0;
+    background-size: cover;
+}
+
+.clubname {
+    font-size: medium;
+    font-weight: 700;
+    font-style: italic;
+    position: relative;
+    top: 55px;
+    left: 150px;
+}
+
+.search {
+    width: 100%;
+    height: 60px;
+}
+
+.search-m {
+    position: relative;
+    width: 100;
+    height: 60px;
+}
+
+.search_logo {
+    position: absolute;
+    width: 125px;
+    height: 40px;
+    top: 4px;
+    left: 0;
+    display: none;
+}
+
+.form {
+    width: 460px;
+    height: 30px;
+    border: 2px solid #c2b8b6;
+    position: absolute;
+    left: 630px;
+    top: 30px;
+    background-color: #7c6666;
+}
+
+.keyword {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 425px;
+    padding: 2px 44px 2px 17px;
+    border: 1px solid transparent;
+    line-height: 26px;
+    font-size: 12px;
+    color: #141414;
+    outline: none;
+}
+
+.form button {
+    position: absolute;
+    right: 0px;
+    line-height: 32px;
+    width: 58px;
+    height: 32px;
+    border: none;
+    background-color: #b94640;
+    font-size: 20px;
+    font-weight: 700;
+    flood-color: #5e4545;
+    cursor: pointer;
+
+}
+
+.search-hleper {
+    display: none;
+    position: absolute;
+    top: 35px;
+    /* height: 200px;  */
+    width: 488px;
+    background-color: rgb(93, 144, 164);
+    border: 1px solid #ccc;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 1px 2px 1px rgb(0 0 0 / 20%);
+}
+
+.search-hleper p {
+    text-align: left;
+    font-size: 12px;
+    height: 24px;
+    padding: 1px 6px;
+    line-height: 24px;
+    cursor: pointer;
+    color: #723838;
+}
+
+/* 在<button>元素后面插入内容，并设置所插入内容的样式： */
+.form button:before {
+    content: "搜索";
+    /*插入的内容*/
+    font-size: 13px;
+    /*插入内容的字体大小*/
+    color: #F9F0DA;
+    /*插入内容的字体颜色*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Popins", sans-serif;
+}
+
+
+.container {
+    background: #6085da;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav {
+    background: #e4caca;
+    border-radius: 50px;
+    padding: 10px;
+    box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 13px 35px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 0.5s;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul li::after {
+    content: "";
+    background: #315d78;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+    transition: top 0.5s, opacity 0.5s;
+}
+
+nav ul li:hover {
+    color: #ddc5c5;
+}
+
+nav ul li:hover::after {
+    top: 50%;
+    opacity: 1;
+}
+
+.photo{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    text-align: center; 
+ }
+ 
+ .word{
+     position: absolute;
+     top: 55%;
+     left: 53%;
+     transform: translate(-50%,-50%);
+     color: #dc4c4c;
+     font-size: 60px;
+     font-weight: 700;
+ }
+ 
+ .word02{
+     position: absolute;
+     top: 62%;
+     left: 52%;
+     transform: translate(-50%,-50%);
+     color: #e82323;
+     font-size: 30px;
+     font-style: italic;
+ }
+ .img{
+     margin-top: 20px;
+     width: 1930px;
+     height: 800px;
+ }
+
+.menu{
+    position: relative;
+    width: 300px;
+    height: 600px;
+    background-color: rgba(181, 168, 168, 0.4);
+    margin: 25px 62px 0;
+}
+
+
+.menu ul{
+    list-style: none;
+    padding: 30px;
+}
+.menu ul li{
+    margin-top: 5px;
+    height: 80px;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+.menu ul li a{
+    /* border:1px solid #141414; */
+    display: block;
+    text-decoration: none;
+    text-indent: 2em;
+    color: #141414;
+    background-image: url(./image/41.jpg) ;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: 200px 8px;
+}
+
+.menu ul li a:hover{
+    background-color: #ff6700;
+    color: #fff;
+
+}
+.news{
+    width: 500px;
+    /* position: relative; */
+}
+
+.news h2{
+    position: absolute;
+    top: -600px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 40px;
+
+}
+
+.news p{
+    width: 1300px;
+    position: absolute;
+    top: -550px;
+    left: 52%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+}
+.vedio{
+    position: absolute;
+    top: -300px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.new_h2{
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 40px;
+}
+.new_h2 p{
+        width: 1300px;
+        position: absolute;
+        top: 130px;
+        left: 52%;
+        transform: translate(-50%,-50%);
+        font-size: 20px;
+    }
+
+
+
+
+section{
+    position: relative;
+}
+
+.footer {
+    top: 150px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 3.5;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #6085da;
+    background: #6085da;;
+    padding: 80px 13% 70px;
+}
+
+.footer-content h4 {
+    color: #fff;
+    margin-bottom: 1.5rem;
+    font-size: 25px;
+}
+
+.footer-content li {
+    margin-bottom: 16px;
+}
+
+.footer-content li a {
+    text-decoration: none;
+    display: block;
+    color: #0d3753;
+    font-size: 15px;
+    font-weight: 400;
+    transition: all .40s ease;
+}
+
+.footer-content li a:hover {
+    transform: translateY(-3px) translateX(-5px);
+    color: #fff;
+}
+
+.footer-conter p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 20px 0;
+}
+
+.icons a {
+    display: inline-block;
+    font-size: 22px;
+    color: #ede4e4;
+    margin-right: 17px;
+    transition: all .40s ease;
+}
+
+.icons a:hover {
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+.footer-img{
+    width: 200px;
+    height: 150px;
+}
+
+@media(max-width:1690px) {
+    section {
+        padding: 50px 5% 40px;
+    }
+}
+
+@media(max-width:1120px) {
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+        gap: 2rem;
+    }
+}
+
+@media(max-width:700px) {
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+        gap: 2.5rem;
+    }
+}

@@ -40,7 +40,7 @@ keyword.oninput=function(){
             count=0;
             cuting();
         }
-    ,3000);
+    ,2000);
 
     //点击下一张
     next.onclick=function(){
@@ -70,6 +70,6 @@ keyword.oninput=function(){
                 count=0;
                 cuting();
             }
-        ,3000);
+        ,2000);
     }
 
